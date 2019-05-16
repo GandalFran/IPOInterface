@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'BebasNeue';
+	src: url("fuentes/BebasNeue.otf");
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url("fuentes/OpenSans-Regular.ttf");
+}
+
+#top {
+	background: #3F84C0;
+  	padding: 25px 25px 10px 25px;
+}
+
+#top img, h2{
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+}
+
+#top img {
+	width: 5%;
+	height: 5%;
+	margin-left: 10px;
+}
+
+#top h2 {
+	padding: 10px;
+	font-family: 'Bebas Neue';
+	font-size: 200%;
+}
+
+#top h3 {
+	padding: 10px 10px 5px 10px;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+
+
