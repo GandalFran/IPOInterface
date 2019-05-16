@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!--<link rel="stylesheet" href="css/tecnologia.css">-->
+    	<title>Doctor Home</title>
+  </head>
+
+  <body>
+	<img  class="media" src="images/logo.png">
+	<h2 class="DoctorHome">Doctor Home</h2>      
+	<p class="cabecera_inicio">Doctor Home se trata de un médico virtual.</p>
+
+	<h3>Expedir receta</h3>
+	<p>Medicamento</p>
+	<select class="med_combo_box">
+  		<option value="paracetamol">Paracetamol</option>
+  		<option value="ibuprofeno">Ibuprofeno</option>
+  		<option value="nolotil">Nolotil</option>
+  		<option value="lorazepam">Lorazepam</option>
+	</select> 
+	<form role="form">
+		<div class="form_cantidad">
+			<input type="text" name="name" id="name" class="form-control input-lg" placeholder="Cantidad">
+		</div>
+	<form>
+
+	<button class="expedir" onclick="redirect1('expedida.html')">EXPEDIR</button>
+	<button class="volver_inicio" onclick="redirect1('main.html')">Volver al inicio</button>
+	<script type="text/javascript">
+		function redirect1(enlace){
+	  		window.location.href= enlace;
+		}
+    	</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!--<link rel="stylesheet" href="css/tecnologia.css">-->
+    	<title>Doctor Home</title>
+	<!--<link rel="stylesheet" href="css/calendar.css" />
+    	<script type="text/javascript" src="scripts/pureJSCalendar.js"></script>-->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="/resources/demos/style.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script>
+  		$( function() {
+    		$( "#datepicker" ).datepicker();
+  		} );
+  	</script>
+  </head>
+
+  <body>
+	<img  class="media" src="images/logo.png">
+	<h2 class="DoctorHome">Doctor Home</h2>      
+	<p class="cabecera_inicio">Doctor Home se trata de un médico virtual.</p>
+
+	<h3>Solicitud de consulta</h3>
+	<!--<script type="text/javascript">
+		pureJSCalendar.open('dd.MM.yyyy', 20, 30, 1, '2018-5-5', '2019-8-20', 'txtTest', 20);
+    	</script>
+    	<input type="text" id="txtTest" />-->
+	<p>Date: <input type="text" id="datepicker"></p>
+
+	<button class="volver_inicio" onclick="redirect1('main.html')">Volver al inicio</button>
+	<script type="text/javascript">
+		function redirect1(enlace){
+	  		window.location.href= enlace;
+		}
+    	</script>
+
+
+  </body>
+</html>
