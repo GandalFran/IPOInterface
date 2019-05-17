@@ -8,8 +8,13 @@
 }
 
 @font-face {
-	font-family: 'BebasNeue';
+	font-family: 'Bebas Neue';
 	src: url("fuentes/BebasNeue.otf");
+}
+
+@font-face {
+	font-family: 'Bebas Neue Thin';
+	src: url("fuentes/BebasNeueT.ttf");
 }
 
 @font-face {
@@ -17,9 +22,15 @@
 	src: url("fuentes/OpenSans-Regular.ttf");
 }
 
+@font-face {
+	font-family: 'Birds of Paradise';
+	src: url("fuentes/BirdsofParadise.ttf");
+}
+
 #top {
 	background: #3F84C0;
-  	padding: 25px 25px 10px 25px;
+  	padding: 15px 25px 10px 25px;
+  	text-align: center;
 }
 
 #top img, h2{
@@ -35,16 +46,17 @@
 }
 
 #top h2 {
-	padding: 10px;
-	font-family: 'Bebas Neue';
-	font-size: 200%;
+	font-family: 'Bebas Neue';	
+	font-size: 450%;
+	margin-left: 10px;
 }
 
 #top h3 {
-	padding: 10px 10px 5px 10px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Bebas Neue Thin';
 	text-decoration: none;
 	color: #ffffff;
+	font-size: 150%;
+	padding: 0px 5px 5px 5px;
 }
 
 
