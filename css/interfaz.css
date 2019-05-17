@@ -22,9 +22,9 @@
 	src: url("fuentes/OpenSans-Regular.ttf");
 }
 
-@font-face {
-	font-family: 'Birds of Paradise';
-	src: url("fuentes/BirdsofParadise.ttf");
+
+div {
+	margin-bottom: 3rem;
 }
 
 #top {
@@ -46,7 +46,7 @@
 
 #top h2 {
 	font-family: 'Bebas Neue';	
-	font-size: 450%;
+	font-size: 350%;
 	margin-left: 10px;
 }
 
@@ -61,72 +61,56 @@
 
 .btn {		
 	position: relative;	
+	display: table;
+  	margin: 0 auto;
 	padding: 1.4rem 4.2rem;
 	padding-right: 3.1rem;
 	font-size: 1.4rem;
-	color: #074085;
+	color: #000000;
 	letter-spacing: 1.1rem;
-	text-transform: uppercase;
 	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
-	user-select: none;
 }
 
-.btn:before, .btn:after {
-	content: '';
-	position: absolute;	
-	transition: inherit;
-	z-index: -1;
+.hvr-sweep-to-bottom {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background-color: #3F84C0;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
-.btn:hover {
-	color: #000000;
-	transition-delay: .6s;
+.hvr-sweep-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #074085;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
-.btn:hover:before {
-	transition-delay: 0s;
+.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+  color: white;
 }
 
-.btn:hover:after {
-	background: var(--inv);
-	transition-delay: .4s;
+.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
 }
-
-
-.from-top:before, 
-.from-top:after {
-	left: 0;
-	height: 0;
-	width: 100%;
-}
-
-.from-top:before {
-	bottom: 0;	
-	border: 1px solid var(--inv);
-	border-top: 0;
-	border-bottom: 0;
-}
-
-.from-top:after {
-	top: 0;
-	height: 0;
-}
-
-.from-top:hover:before,
-.from-top:hover:after {
-	height: 100%;
-}
-
-
-*, *:before, *:after {
-	box-sizing: border-box;
-}
-
-body {
-	--def: #ffffff; 	
-	--inv: #074085;
-}
-
-
 
