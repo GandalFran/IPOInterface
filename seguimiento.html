@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  		<link rel="stylesheet" href="css/interfaz.css">
-    	<title>Doctor Home</title>
-    	<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
-  </head>
+	<head>
+		<link rel="stylesheet" href="css/interfaz.css">
+		<title>Doctor Home</title>
+		<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="http://www.botlibre.com/scripts/sdk.js"></script>
+		<script type="text/javascript" src="javascripts/ai.js"></script>
+	</head>
 
-  <body>
-	<div id="top">
-      	<img  class="media" id="logo" src="images/logo.png">
-    	<h2 class="DoctorHome">Doctor Home</h2>    
-		<!--<h3 class="cabecera_inicio">Doctor Home se trata de un médico virtual.<h3>-->
-    </div>
+	<body>
+		<div id="top">
+			<img  class="media" id="logo" src="images/logo.png">
+			<h2 class="DoctorHome">Doctor Home</h2>    
+			<!--<h3 class="cabecera_inicio">Doctor Home se trata de un médico virtual.<h3>-->
+		</div>
 	
-	<h3>Seguimiento médico</h3>
-	<p>Nombre: Francisco</p>
-	<p>Apellidos: Pinto Santos</p>
-	<p>Sexo: Hombre</p>
-	<p>Edad: 20</p>
+		<h3>Seguimiento médico</h3>
+		<p>Nombre: Francisco</p>
+		<p>Apellidos: Pinto Santos</p>
+		<p>Sexo: Hombre</p>
+		<p>Edad: 20</p>
 	
-	<h3>Listado de enfermedades</h3>
-	<a href="enfermedad.html">Gripe</a>
-	<a href="enfermedad.html">Esguince de tobillo</a>
-	<a href="enfermedad.html">Distensión de codo</a>
-	<button class="volver_inicio" onclick="redirect1('main.html')">Volver al inicio</button>
+		<h3>Listado de enfermedades</h3>
+		<a href="enfermedad.html">Gripe</a>
+		<a href="enfermedad.html">Esguince de tobillo</a>
+		<a href="enfermedad.html">Distensión de codo</a>
+		<button class="volver_inicio" onclick="redirect1('main.html')">Volver al inicio</button>
 	
-	<script type="text/javascript">
-		function redirect1(enlace){
-	  		window.location.href= enlace;
-		}
-    	</script>
-  </body>
+		<script type="text/javascript">
+			function redirect1(enlace){
+				window.location.href= enlace;
+			}
+		</script>
+
+		<div class="row">
+			<div class="col s4"></div>
+				<div class="col s4">
+					<div class="card white">
+						<div class="card-content">
+							<div id='bot-div' style='background-color:transparent'>
+								<div class="row">
+									<div id='avatar-video-div' class="avatarCenter" style='background-repeat: no-repeat;'>
+										<video id='avatar-video' autoplay preload='auto' style='background:transparent;height:320px;'>
+											Video format not supported by your browser (try Chrome)
+										</video>
+									</div>
+									<div id='avatar-canvas-div' class="avatarCenter">
+										<canvas id='avatar-canvas' style='background:transparent;height:320px;' class="avatarCenter">
+											Canvas not supported by your browser (try Chrome)
+										</canvas>
+									</div>
+									<div>
+										<p id='response'>Bot: </p>
+									</div>  
+								</div>
+							</div>
+						</div>
+						<div class="card-action" id="acciones">
+					 		<input id='chat' type='text'/>
+							<a href="#" class="black-text"><i class="material-icons" id="rec">mic_none</i></a>
+						</div>
+					</div>
+				</div>
+			<div class="col s4"></div>
+		</div>
+	
+
+	</body>
 </html>
