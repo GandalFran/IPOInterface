@@ -6,7 +6,7 @@
 			<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
+			<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">-->
 			<link rel="stylesheet" href="stylesheets/style.css">
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
@@ -21,6 +21,7 @@
 			<!--<h3 class="cabecera_inicio">Doctor Home se trata de un médico virtual.<h3>-->
 		</div>  
 
+	<div class="avatar2">
 		<div class="row">
 			<div class="col s4"></div>
 			<div class="col s4">
@@ -52,9 +53,11 @@
 			</div>
 			<div class="col s4"></div>
 		</div>
-	  
-		<button class="volver_inicio" onclick="redirect1('main.html')">Volver al inicio</button>
-	
+	</div>
+	  	
+		<div class="volverInicio hvr-sweep-to-bottom" onclick="redirect1('main.html')">Volver al inicio</div>
+		
+
 		<script type="text/javascript">
 			function redirect1(enlace){
 				window.location.href= enlace;

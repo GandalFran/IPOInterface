@@ -14,28 +14,31 @@
 		<!--<h3 class="cabecera_inicio">Doctor Home se trata de un médico virtual.<h3>-->
     </div>
     
-	<form role="form">
-		<!--<fieldset>-->
-		    	<!--<hr class="colorgraph">-->
-		    	<div class="form-group">
-		    		<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Usuario">
-		    	</div>
-		    	<div class="form-group">
-		    		<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Contraseña">
-		    	</div>
-		    	<!--<div class="row">
-		    		<span class="button-checkbox">
-		    			<a href="" class="btn btn-link pull-right">¿Olvidaste la contraseña?</a>
-		    		</span>
-		    	</div>-->
-		    	<div class="row">
-				<div class="col-xs-6 col-sm-6 col-md-6">
-                        		<!--<input type="submit" class="btn btn-lg btn-success btn-block" value="Aceptar">-->
-				</div>
-			</div>
-		<!--</fieldset>-->
-	</form>	
-	<button class="aceptar" onclick="redirect1('introduccion.html')">Aceptar</button>
+	<!--<div class="userpass_form">
+		<form role="form">
+			    	<div class="form-group">
+			    		<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Usuario">
+			    	</div>
+			    	<div class="form-group">
+			    		<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Contraseña">
+			    	</div>
+		</form>	
+	</div>-->
+	<div class="form_type">
+  		<form action="introduccion.html">
+    		<label for="fname">Usuario</label>
+    		<input type="text" id="fname" name="firstname" placeholder="Usuario">
+
+    		<label for="lname">Contraseña</label>
+    		<input type="text" id="lname" name="lastname" placeholder="Contraseña">
+    
+  			<div class="acceptButton">
+    			<input type="submit" id="submitButton" value="ACEPTAR">
+  			</div>
+  		</form>
+	</div>
+
+	<!--<div class="btn hvr-sweep-to-bottom" id="aceptar" onclick="redirect1('introduccion.html')">Aceptar</div>-->
 	<script type="text/javascript">
 		function redirect1(enlace){
 	  		window.location.href= enlace;

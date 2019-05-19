@@ -6,7 +6,7 @@
 		<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">-->
 		<link rel="stylesheet" href="stylesheets/style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
@@ -24,12 +24,20 @@
 		</div>
 
 		<h3>Incidencia:</h3>
-		<img  class="media" src="images/grafico.png">
-		<p>Fecha:16-5-19</p>
-		<p>Motivo: Gripe</p>
-		<p>Atendido por: Héctor Sánchez San Blas</p>
-		<p>Descripción: Ibuprofeno cada 6 horas y dosis diaria de medicamentos</p>
-		<button class="volver_inicio" onclick="redirect1('main.html')">Volver al inicio</button>
+
+		<div class="grid">			
+			<img  class="media" src="images/chart.png">
+			<div class="information">
+				<p>Fecha:16-5-19</p>
+				<p>Motivo: Gripe</p>
+				<p>Atendido por: Héctor Sánchez San Blas</p>
+				<p>Descripción: Ibuprofeno cada 6 horas y dosis diaria de medicamentos</p>
+			<div>
+		<div>
+		<br>
+		<br>
+		<br>
+		<div class="volverInicio hvr-sweep-to-bottom" onclick="redirect1('main.html')">Volver al inicio</div>
 	
 
 		<script type="text/javascript">
@@ -38,37 +46,39 @@
 			}
 		</script>
 
-
-		<div class="row">
-			<div class="col s4"></div>
-			<div class="col s4">
-				<div class="card white">
-					<div class="card-content">
-						<div id='bot-div' style='background-color:transparent'>
-							<div class="row">
-								<div id='avatar-video-div' class="avatarCenter" style='background-repeat: no-repeat;'>
-									<video id='avatar-video' autoplay preload='auto' style='background:transparent;height:320px;'>
-										Video format not supported by your browser (try Chrome)
-									</video>
+		<div class="miniAvatar">
+			<div class="row">
+				<div class="col s4"></div>
+				<div class="col s4">
+					<div class="card white">
+						<div class="card-content">
+							<div id='bot-div' style='background-color:transparent'>
+								<div class="row">
+									<div id='avatar-video-div' class="avatarCenter" style='background-repeat: no-repeat;'>
+										<video id='avatar-video' autoplay preload='auto' style='background:transparent;height:320px;'>
+											Video format not supported by your browser (try Chrome)
+										</video>
+									</div>
+									<div id='avatar-canvas-div' class="avatarCenter">
+										<canvas id='avatar-canvas' style='background:transparent;' class="avatarCenter">
+											Canvas not supported by your browser (try Chrome)
+										</canvas>
+									</div>
+									<!--<div>
+										<p id='response'>Bot: </p>
+									</div>-->  
 								</div>
-								<div id='avatar-canvas-div' class="avatarCenter">
-									<canvas id='avatar-canvas' style='background:transparent;height:320px;' class="avatarCenter">
-										Canvas not supported by your browser (try Chrome)
-									</canvas>
-								</div>
-								<div>
-									<p id='response'>Bot: </p>
-								</div>  
 							</div>
 						</div>
-					</div>
-					<div class="card-action" id="acciones">
-				 		<input id='chat' type='text'/>
-						<a href="#" class="black-text"><i class="material-icons" id="rec">mic_none</i></a>
+						<!--<div class="card-action" id="acciones">
+					 		<input id='chat' type='text'/>
+							<a href="#" class="black-text"><i class="material-icons" id="rec">mic_none</i></a>
+						</div>-->
 					</div>
 				</div>
+				<div class="col s4"></div>
 			</div>
-			<div class="col s4"></div>
 		</div>
+
 	</body>
 </html>

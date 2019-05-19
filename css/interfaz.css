@@ -12,19 +12,40 @@
 	src: url("fuentes/BebasNeue.otf");
 }
 
-@font-face {
+/*@font-face {
 	font-family: 'Bebas Neue Thin';
 	src: url("fuentes/BebasNeueT.ttf");
+}*/
+
+/*@font-face {
+	font-family: 'Open Sans';
+	src: url("fuentes/OpenSans-Regular.ttf");
+}*/
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url("fuentes/Merriweather-Regular.ttf");
 }
 
 @font-face {
-	font-family: 'Open Sans';
-	src: url("fuentes/OpenSans-Regular.ttf");
+	font-family: 'Trajan';
+	src: url("fuentes/Trajan Pro Regular.ttf");
 }
 
 
 div {
 	margin-bottom: 3rem;
+}
+
+h3 {
+	font-family: 'Merriweather',sans-serif;
+	font-size: 200%;
+	margin: 0% 0% 0% 3%;
+}
+
+label {
+	font-family: 'Merriweather',sans-serif;
+  	font-size: 150%;
 }
 
 #top {
@@ -47,7 +68,7 @@ div {
 #top h2 {
 	font-family: 'Bebas Neue';	
 	font-size: 350%;
-	margin-left: 10px;
+	margin-left: 1%;
 }
 
 /*#top h3 {
@@ -58,11 +79,222 @@ div {
 	padding: 0px 5px 5px 5px;
 }*/
 
+#acceso1, #acceso2{
+	text-align: center;
+	margin: 5% 5% 0% 0%;
+	display: inline-block;
+}
 
-.btn {		
+.citaPedida{
+	text-align: center;
+	margin-top: 7%;
+}
+
+.citaPedida h3{
+	margin: 0% 0% 2% 0%;
+}
+
+.citaPedida p {
+	font-size: 200%;
+	font-family: 'Merriweather', sans-serif;
+}
+.select_style, .med{
+	display: inline-block;
+}
+
+.cantidad, .cantidadLabel{
+	display: inline-block;
+}
+
+.select_style select{
+   width: 300px;
+   padding: 5px;
+   font-size: 16px;
+   margin-left: 2%;
+}
+
+.enf p{
+	display: inline-block;
+}
+
+.information p {
+	margin: 2% 1% 0% 5%;
+	font-family: 'Merriweather',sans-serif;
+}
+
+.information2 p {
+	margin: 2% 1% 0% 0%;
+	font-family: 'Merriweather',sans-serif;
+}
+
+#guion{
+	margin: 0% 1% 0% 5%;
+}
+
+.miniAvatar{
+	position: fixed;
+  	bottom: 0;
+  	right: 0;
+}
+
+#avatar-canvas{
+	height: 200px;
+}
+
+.volverInicio {
 	position: relative;	
 	display: table;
-  	margin: 0 auto;
+	padding: 1.4rem 4.2rem;
+	font-size: 1.4rem;
+	color: #000000;
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	text-align: left;
+	margin-left: 3%;
+    font-family: 'Trajan';
+}
+
+.volverInicioReceta {
+	position: relative;	
+	display: table;
+	padding: 1rem 2.8rem;
+	font-size: 1rem;
+	color: #000000;
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	text-align: left;
+	margin-left: 3%;
+    font-family: 'Trajan';
+}
+
+
+
+.grid h3 {
+	text-align: center;
+	margin-top: 15%;
+}
+
+.grid .media {
+	width: 90%;
+	margin-left: 5%; 
+}
+/*.row {
+	position: relative;	
+  	display: table;
+	margin-left: auto;
+    margin-right: auto;
+}*/
+
+.grid {
+	display: grid;
+	grid-gap: 0px;
+	grid-template-columns: repeat(2, 50%);
+}
+
+.buttonsMain {
+	margin: 0% 10% 0% 7%;
+}
+
+.avatar {
+	margin: 0% 7% 0% 0%;	
+}
+
+.form_type, .avatar2{
+	position: relative;	
+  	display: table;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.form_type2{
+	position: relative;	
+	margin-left: 3%;
+	margin-top: 1%;
+    margin-right: 15%;
+}
+
+.form_type3{
+	position: relative;	
+  	display: table;
+	margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-bottom: 3%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Merriweather',sans-serif;
+}
+
+.cantidad input[type=text]{
+  width: 136%;
+  padding: 12px 20px;
+  margin-left: 29%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Merriweather',sans-serif;
+}
+
+
+
+.acceptButton {
+    text-align: right;
+}
+
+
+input[type=submit] {
+  background-color: #3F84C0;
+  color: black;
+	padding: 1.2rem 3.8rem;
+	padding-right: 2.7rem;
+	color: #000000;
+	letter-spacing: 1.1rem;
+	cursor: pointer;
+    font-family: 'Trajan';
+    font-size: 100%;
+    margin-top: 1%;
+}
+
+input[type=submit]:hover {
+  background-color: #074085;
+  color: white;
+}
+
+input[type=button]{
+	background-color: #3F84C0;
+  	color: black;
+	padding: 0.6rem 1.9rem;
+	padding-right: 1.4rem;
+	color: #000000;
+	letter-spacing: 0.5rem;
+	cursor: pointer;
+    font-family: 'Trajan';
+    font-size: 100%;
+    margin-top: 1%;
+}
+
+input[type=button]:hover {
+	 background-color: #074085;
+  color: white;
+}
+
+.buttons{
+    width: 100%;
+	text-align:center;			
+}
+
+.btn{		
+	position: relative;	
+	display: table;
 	padding: 1.4rem 4.2rem;
 	padding-right: 3.1rem;
 	font-size: 1.4rem;
@@ -70,6 +302,9 @@ div {
 	letter-spacing: 1.1rem;
 	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
+	margin-left: auto;
+    margin-right: auto;
+    font-family: 'Trajan';
 }
 
 .hvr-sweep-to-bottom {

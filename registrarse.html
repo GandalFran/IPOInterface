@@ -14,38 +14,24 @@
 		<!--<h3 class="cabecera_inicio">Doctor Home se trata de un médico virtual.<h3>-->
     </div>
     
-	<form role="form">
-		<!--<fieldset>-->
-		    	<!--<hr class="colorgraph">-->
-		    	<div class="form-group">
-		    		<input type="text" name="name" id="name" class="form-control input-lg" placeholder="Nombre">
-		    	</div>
-		    	<div class="form-group">
-		    		<input type="text" name="dni" id="dni" class="form-control input-lg" placeholder="DNI">
-		    	</div>
-			<div class="form-group">
-		    		<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Contraseña">
-		    	</div>
-			<div class="form-group">
-		    		<input type="text" name="address" id="address" class="form-control input-lg" placeholder="Dirección">
-		    	</div>
-		    	<!--<div class="row">
-		    		<span class="button-checkbox">
-		    			<a href="" class="btn btn-link pull-right">¿Olvidaste la contraseña?</a>
-		    		</span>
-		    	</div>-->
-		    	<!--<div class="row">
-				<div class="col-xs-6 col-sm-6 col-md-6">
-                        		<input type="submit" class="btn btn-lg btn-success btn-block" value="Aceptar">
-				</div>
-			</div>-->
-		<!--</fieldset>-->
-	</form>
-	<button class="aceptar" onclick="redirect1('introduccion.html')">Aceptar</button>
-	<script type="text/javascript">
-		function redirect1(enlace){
-	  		window.location.href= enlace;
-		}
-    	</script>
+	<div class="form_type3">
+  		<form action="introduccion.html">
+    		<label for="fname">Nombre</label>
+    		<input type="text" id="fname" name="firstname" placeholder="Nombre">
+    		
+    		<label for="lname">DNI</label>
+    		<input type="text" id="lname" name="lastname" placeholder="DNI">
+    
+    		<label for="lname">Contraseña</label>
+    		<input type="text" id="lname" name="lastname" placeholder="Contraseña">
+
+    		<label for="lname">Dirección</label>
+    		<input type="text" id="lname" name="lastname" placeholder="Dirección">
+
+  			<div class="acceptButton">
+    			<input type="submit" id="submitButton" value="ACEPTAR">
+  			</div>
+  		</form>
+	</div>
   </body>
 </html>
