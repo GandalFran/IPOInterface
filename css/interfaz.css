@@ -9,7 +9,7 @@
 
 @font-face {
 	font-family: 'Bebas Neue';
-	src: url("fuentes/BebasNeue.otf");
+	src: url("fuentes/BebasNeue.otf") format("opentype");
 }
 
 /*@font-face {
@@ -24,12 +24,12 @@
 
 @font-face {
 	font-family: 'Merriweather';
-	src: url("fuentes/Merriweather-Regular.ttf");
+	src: url("fuentes/Merriweather-Regular.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: 'Trajan';
-	src: url("fuentes/Trajan Pro Regular.ttf");
+	src: url("fuentes/Trajan Pro Regular.ttf") format("truetype");
 }
 
 
