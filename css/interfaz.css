@@ -12,25 +12,25 @@
 	src: url("fuentes/BebasNeue.otf") format("opentype");
 }
 
-/*@font-face {
-	font-family: 'Bebas Neue Thin';
-	src: url("fuentes/BebasNeueT.ttf");
-}*/
+@font-face {
+	font-family: 'Roboto';
+	src: url("fuentes/Roboto-Regular.ttf");
+}
 
-/*@font-face {
+@font-face {
 	font-family: 'Open Sans';
 	src: url("fuentes/OpenSans-Regular.ttf");
-}*/
+}
 
 @font-face {
 	font-family: 'Merriweather';
 	src: url("fuentes/Merriweather-Regular.ttf") format("truetype");
 }
 
-@font-face {
+/*@font-face {
 	font-family: 'Trajan';
 	src: url("fuentes/Trajan Pro Regular.ttf") format("truetype");
-}
+}*/
 
 
 div {
@@ -44,7 +44,7 @@ h3 {
 }
 
 label {
-	font-family: 'Merriweather',sans-serif;
+	font-family: 'Open Sans',sans-serif;
   	font-size: 150%;
 }
 
@@ -96,7 +96,7 @@ label {
 
 .citaPedida p {
 	font-size: 200%;
-	font-family: 'Merriweather', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 .select_style, .med{
 	display: inline-block;
@@ -119,12 +119,12 @@ label {
 
 .information p {
 	margin: 2% 1% 0% 5%;
-	font-family: 'Merriweather',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 }
 
 .information2 p {
 	margin: 2% 1% 0% 0%;
-	font-family: 'Merriweather',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 }
 
 #guion{
@@ -151,7 +151,7 @@ label {
 	cursor: pointer;
 	text-align: left;
 	margin-left: 3%;
-    font-family: 'Trajan';
+    font-family: 'Roboto';
 }
 
 .volverInicioReceta {
@@ -164,7 +164,7 @@ label {
 	cursor: pointer;
 	text-align: left;
 	margin-left: 3%;
-    font-family: 'Trajan';
+    font-family: 'Roboto';
 }
 
 
@@ -230,7 +230,7 @@ input[type=text]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: 'Merriweather',sans-serif;
+  font-family: 'Open Sans',sans-serif;
 }
 
 .cantidad input[type=text]{
@@ -241,7 +241,7 @@ input[type=text]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: 'Merriweather',sans-serif;
+  font-family: 'Open Sans',sans-serif;
 }
 
 
@@ -257,9 +257,9 @@ input[type=submit] {
 	padding: 1.2rem 3.8rem;
 	padding-right: 2.7rem;
 	color: #000000;
-	letter-spacing: 1.1rem;
+	letter-spacing: 0.5rem;
 	cursor: pointer;
-    font-family: 'Trajan';
+    font-family: 'Roboto';
     font-size: 100%;
     margin-top: 1%;
 }
@@ -277,14 +277,14 @@ input[type=button]{
 	color: #000000;
 	letter-spacing: 0.5rem;
 	cursor: pointer;
-    font-family: 'Trajan';
+    font-family: 'Roboto';
     font-size: 100%;
     margin-top: 1%;
 }
 
 input[type=button]:hover {
-	 background-color: #074085;
-  color: white;
+	background-color: #074085;
+  	color: white;
 }
 
 .buttons{
@@ -299,12 +299,12 @@ input[type=button]:hover {
 	padding-right: 3.1rem;
 	font-size: 1.4rem;
 	color: #000000;
-	letter-spacing: 1.1rem;
+	letter-spacing: 0.5rem;
 	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
 	margin-left: auto;
     margin-right: auto;
-    font-family: 'Trajan';
+    font-family: 'Roboto';
 }
 
 .hvr-sweep-to-bottom {
