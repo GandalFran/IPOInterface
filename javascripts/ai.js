@@ -10,7 +10,7 @@
       web.width = "250";
       web.height = "300";
       web.prefix = null
-      web.addMessage("Bienvenido", "like", "smile", "");
+      web.addMessage("", "like", "smile", "");
       web.processMessages();
 	  
 //CONFIGURACION DE API.AI
@@ -62,14 +62,16 @@
       }
       }
       function setInput(text) {
-      $("#chat").val(text);
-      send();
+      //$("#chat").val(text);
+      send(text);
       }
       function updateRec() {
       $("#rec").text(recognition ? "mic" : "mic_none");
       }
-      function send() {
-      var text = $("#chat").val();
+      function send(text) {
+            if(undefined === text){
+                        var text = $("#chat").val();
+            }
       $.ajax({
       type: "POST",
       url: baseUrl + "query?v=20150910",
@@ -87,7 +89,12 @@
       console.log("Mensaje: " + uteracion);
       console.log("Intención: " + intencion);
       console.log("Respuesta: " + respuesta);
-      setResponse(respuesta, intencion, confidencia, uteracion);
+
+      if(text.includes("aENLACE")){
+            window.location.href = text.split("ENLACE")[1] + ".html";
+      }else{
+            setResponse(respuesta, intencion, confidencia, uteracion);
+      }
       },
       error: function() {
       setResponse("Internal Server Error");
