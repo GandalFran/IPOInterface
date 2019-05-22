@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/interfaz.css">
+		<title>Doctor Home</title>
+		<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">-->
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="http://www.botlibre.com/scripts/sdk.js"></script>
+		<script type="text/javascript" src="javascripts/ai.js"></script>
+	</head>
+
+	<body>
+		<div id="top">
+			<img  class="media" id="logo" src="images/logo.png">
+			<h2 class="DoctorHome">Doctor Home</h2>    
+			<!--<h3 class="cabecera_inicio">Doctor Home se trata de un médico virtual.<h3>-->
+		</div>
+
+		<h3>Expedir receta</h3>
+		<div class="form_type2">
+  			<form>
+  				<br>
+  				<label class="med" for="medicamento">Medicamento: </label>
+  				<div class="select_style">
+	    			<select id="medicamento" name="medicamento">
+	      				<option value="paracetamol">Paracetamol</option>
+						<option value="ibuprofeno">Ibuprofeno</option>
+						<option value="nolotil">Nolotil</option>
+						<option value="lorazepam">Lorazepam</option>
+	    			</select>
+	    		</div>
+    			<br>
+    			<label class="cantidadLabel" for="cantidad">Cantidad: </label>
+    			<div class="cantidad">
+    				<input type="text" id="cantidad" name="cantidad" placeholder="Cantidad">
+  				</div>
+  				<br>
+  			</form>
+
+    			<button onclick="botonpulsado()">EXPEDIR</button>
+ 	</div>
+
+<!--
+		<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>-->
+
+		<!--<p>Medicamento</p>
+		<select class="med_combo_box">
+			<option value="paracetamol">Paracetamol</option>
+			<option value="ibuprofeno">Ibuprofeno</option>
+			<option value="nolotil">Nolotil</option>
+			<option value="lorazepam">Lorazepam</option>
+		</select> 
+		<form role="form">
+			<div class="form_cantidad">
+				<input type="text" name="name" id="name" class="form-control input-lg" placeholder="Cantidad">
+			</div>
+		<form>
+
+		<button class="expedir" onclick="redirect1('expedida.html')">EXPEDIR</button>-->
+		<br>
+		<br>
+		<br>
+		<div class="volverInicioReceta hvr-sweep-to-bottom" onclick="redirect1('main.html')">Volver al inicio</div>
+		
+
+		<div class="miniAvatar">
+			<div class="row">
+				<div class="col s4"></div>
+					<div class="col s4">
+						<div class="card white">
+							<div class="card-content">
+								<div id='bot-div' style='background-color:transparent'>
+									<div class="row">
+										<div id='avatar-video-div' class="avatarCenter" style='background-repeat: no-repeat;'>
+											<video id='avatar-video' autoplay preload='auto' style='background:transparent;height:320px;'>
+												Video format not supported by your browser (try Chrome)
+											</video>
+										</div>
+										<div id='avatar-canvas-div' class="avatarCenter">
+											<canvas id='avatar-canvas' style='background:transparent;' class="avatarCenter">
+												Canvas not supported by your browser (try Chrome)
+											</canvas>
+										</div>
+										<!--<div>
+											<p id='response'>Bot: </p>
+										</div>-->  
+									</div>
+								</div>
+							</div>
+							<!--<div class="card-action" id="acciones">
+						 		<input id='chat' type='text'/>
+								<a href="#" class="black-text"><i class="material-icons" id="rec">mic_none</i></a>
+							</div>-->
+						</div>
+					</div>
+				<div class="col s4"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function redirect1(enlace){
+				window.location.href= enlace;
+			}
+
+			function botonpulsado(){
+				var cantidad = document.getElementById("cantidad").value;
+				var medicamento = document.getElementById("medicamento").value;
+				setInput("text.expedirreceta.final "+medicamento+" "+cantidad);			
+		        setTimeout(function() {window.location.href = "main.html";}, 20000);			
+			}
+
+			setInput("text.expedirreceta");
+
+		</script>
+  </body>
+</html>

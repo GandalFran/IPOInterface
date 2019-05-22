@@ -1,0 +1,4 @@
+Color azul claro: #3F84C0
+Color azul oscuro: #074085
+
+Las paletas están sacadas de Paletton (https://paletton.com/#uid=13z0u0kn9EAcURGiyKXrZzRwdrY), añadiendo el azul oscuro propio del logotipo de Sacyl.

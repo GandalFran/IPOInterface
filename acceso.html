@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  		<link rel="stylesheet" href="css/interfaz.css">
+    	<title>Doctor Home</title>
+    	<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+  </head>
+
+  <body>
+	<div id="top">
+      	<img  class="media" id="logo" src="images/logo.png">
+    	<h2 class="DoctorHome">Doctor Home</h2>    
+		<!--<h3 class="cabecera_inicio">Doctor Home se trata de un médico virtual.<h3>-->
+    </div>
+    
+	<h3 class="metodo">Método de autentificación</h3>
+	<div class="buttons">
+    <div class="btn hvr-sweep-to-bottom" id="acceso1" onclick="redirect1('acceso_user_pass.html')">Usuario y <br>contraseña</div>
+	  <div class="btn hvr-sweep-to-bottom" id="acceso2" onclick="redirect1('dni_intro.html')">Introducir <br>DNI</div>  
+	</div>
+  <script type="text/javascript">
+		function redirect1(enlace){
+	  		window.location.href= enlace;
+		}
+    	</script>	
+  </body>
+</html>
+
+
+

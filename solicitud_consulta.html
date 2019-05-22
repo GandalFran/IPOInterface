@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/interfaz.css">
+		<title>Doctor Home</title>
+		<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">-->
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="http://www.botlibre.com/scripts/sdk.js"></script>
+		<script type="text/javascript" src="javascripts/ai.js"></script>
+			
+		<link rel="stylesheet" href="css/calendar.css" />
+		<script type="text/javascript" src="scriptCalendar/pureJSCalendar.js"></script>
+	<!--<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+		<!--<script>
+			$( function() {
+				$( "#datepicker" ).datepicker();
+			} );
+		</script>-->
+	</head>
+
+	<body>
+		<div id="top">
+				<img  class="media" id="logo" src="images/logo.png">
+				<h2 class="DoctorHome">Doctor Home</h2>    
+				<!--<h3 class="cabecera_inicio">Doctor Home se trata de un médico virtual.<h3>-->
+		</div>
+
+		<h3>Solicitud de consulta</h3>
+		<div class="form_type2">
+			<form class="consulta" action="consulta_pedida">
+				<input type="button" value="Abrir calendario" onclick="pureJSCalendar.open('dd.MM.yyyy', 20, 30, 1, '2018-5-5', '2019-8-20', 'txtTest', 20)" />
+		    	<input type="button" value="Cerrar calendario" onclick="pureJSCalendar.close()" />
+		    	<br>		
+		    	<input type="text" id="txtTest" />
+		    	<div class="acceptButton">
+	  			</div>
+	  		</form>
+
+	    			<button id="submitButton" onclick="citaelegida()">ACEPTAR</button>
+	    </div>
+		<!--<p>Date: <input type="text" id="datepicker"></p>-->
+
+		<br><br><br><br>
+
+		<div class="volverInicio hvr-sweep-to-bottom" onclick="redirect1('main.html')">Volver al inicio</div>
+		
+
+	<div class="miniAvatar">
+		<div class="row">
+			<div class="col s4"></div>
+			<div class="col s4">
+				<div class="card white">
+					<div class="card-content">
+						<div id='bot-div' style='background-color:transparent'>
+							<div class="row">
+								<div id='avatar-video-div' class="avatarCenter" style='background-repeat: no-repeat;'>
+									<video id='avatar-video' autoplay preload='auto' style='background:transparent;height:320px;'>
+										Video format not supported by your browser (try Chrome)
+									</video>
+								</div>
+								<div id='avatar-canvas-div' class="avatarCenter">
+									<canvas id='avatar-canvas' style='background:transparent;' class="avatarCenter">
+										Canvas not supported by your browser (try Chrome)
+									</canvas>
+								</div>
+								<!--<div>
+									<p id='response'>Bot: </p>
+								</div>-->
+							</div>
+						</div>
+					</div>
+					<!--<div class="card-action" id="acciones">
+				 		<input id='chat' type='text'/>
+						<a href="#" class="black-text"><i class="material-icons" id="rec">mic_none</i></a>
+					</div>-->
+				</div>
+			</div>
+			<div class="col s4"></div>
+		</div>
+	<div>
+<script type="text/javascript">
+			function redirect1(enlace){
+					window.location.href= enlace;
+			}
+
+			function citaelegida(){
+				var day = document.getElementById("txtTest").value;
+				setInput("text.diagnostico.resultados.finalelegircita "+day);
+		        setTimeout(function() {window.location.href = "consulta_pedida.html";}, 20000);					
+			}
+
+		setInput("text.diagnostico.resultados.elegircita2");
+		</script>
+	</body>
+</html>
