@@ -43,20 +43,17 @@
 		    	<br>		
 		    	<input type="text" id="txtTest" />
 		    	<div class="acceptButton">
-	    			<input type="submit" id="submitButton" value="ACEPTAR">
 	  			</div>
 	  		</form>
+
+	    			<button id="submitButton" onclick="citaelegida()">ACEPTAR</button>
 	    </div>
 		<!--<p>Date: <input type="text" id="datepicker"></p>-->
 
 		<br><br><br><br>
 
 		<div class="volverInicio hvr-sweep-to-bottom" onclick="redirect1('main.html')">Volver al inicio</div>
-		<script type="text/javascript">
-			function redirect1(enlace){
-					window.location.href= enlace;
-			}
-		</script>
+		
 
 	<div class="miniAvatar">
 		<div class="row">
@@ -91,6 +88,18 @@
 			<div class="col s4"></div>
 		</div>
 	<div>
+<script type="text/javascript">
+			function redirect1(enlace){
+					window.location.href= enlace;
+			}
 
+			function citaelegida(){
+				var day = document.getElementById("txtTest").value;
+				setInput("text.diagnostico.resultados.finalelegircita "+day);
+		        setTimeout(function() {window.location.href = "consulta_pedida.html";}, 20000);					
+			}
+
+		setInput("text.diagnostico.resultados.elegircita2");
+		</script>
 	</body>
 </html>

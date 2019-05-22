@@ -90,8 +90,8 @@
       console.log("Intención: " + intencion);
       console.log("Respuesta: " + respuesta);
 
-      if(text.includes("aENLACE")){
-            window.location.href = text.split("ENLACE")[1] + ".html";
+      if(respuesta.includes("aENLACE")){
+            window.location.href = respuesta.split("ENLACE")[1] + ".html";
       }else{
             setResponse(respuesta, intencion, confidencia, uteracion);
       }

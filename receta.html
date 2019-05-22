@@ -40,9 +40,10 @@
     				<input type="text" id="cantidad" name="cantidad" placeholder="Cantidad">
   				</div>
   				<br>
-    			<input type="submit" value="Expedir" style='margin-left: 23%'>
   			</form>
-		</div>
+
+    			<button onclick="botonpulsado()">EXPEDIR</button>
+ 	</div>
 
 <!--
 		<div>
@@ -82,11 +83,7 @@
 		<br>
 		<br>
 		<div class="volverInicioReceta hvr-sweep-to-bottom" onclick="redirect1('main.html')">Volver al inicio</div>
-		<script type="text/javascript">
-			function redirect1(enlace){
-				window.location.href= enlace;
-			}
-		</script>
+		
 
 		<div class="miniAvatar">
 			<div class="row">
@@ -121,6 +118,20 @@
 				<div class="col s4"></div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			function redirect1(enlace){
+				window.location.href= enlace;
+			}
 
+			function botonpulsado(){
+				var cantidad = document.getElementById("cantidad").value;
+				var medicamento = document.getElementById("medicamento").value;
+				setInput("text.expedirreceta.final "+medicamento+" "+cantidad);			
+		        setTimeout(function() {window.location.href = "main.html";}, 20000);			
+			}
+
+			setInput("text.expedirreceta");
+
+		</script>
   </body>
 </html>
