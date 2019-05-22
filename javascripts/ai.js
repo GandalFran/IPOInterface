@@ -91,7 +91,7 @@
       console.log("Respuesta: " + respuesta);
 
       if(respuesta.includes("aENLACE")){
-            window.location.href = respuesta.split("ENLACE")[1] + ".html";
+            window.location.href = "/IPOInterface/" + respuesta.split("ENLACE")[1] + ".html";
       }else{
             setResponse(respuesta, intencion, confidencia, uteracion);
       }
